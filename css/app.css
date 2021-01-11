@@ -204,16 +204,29 @@ html {
  
 }
 .book {
-  background-color: #0000ff;
-  font-size:30%;
+  font-size: 30%;
   color: white;
   height: 5vw;
   width: 3.5vw;
-  margin-bottom: .5vw gray;
 }
 
 
+.book:hover {
+  position:relative;
+  height:30vw;
+  width:21vw;
+  z-index:999;
+}
+
+
+
+
 .book1 {
+
+  background-image:url("../img/b1.jpg");
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position:center;
 
   grid-column-start: 5;
   grid-column-end: 7;
@@ -225,6 +238,11 @@ html {
 
 .book2 {
 
+  background-image:url("../img/b2.jpg");
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position:center;
+
   grid-column-start: 8;
   grid-column-end: 10;
   grid-row-start: 5;
@@ -232,6 +250,11 @@ html {
 
  }
 .book3 {
+
+  background-image:url("../img/b3.jpg");
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position:center;
 
   grid-column-start: 11;
   grid-column-end: 13;
@@ -242,6 +265,11 @@ html {
 
 .book4 {
 
+  background-image:url("../img/b4.jpg");
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position:center;
+
   grid-column-start: 5;
   grid-column-end: 7;
   grid-row-start: 8;
@@ -251,6 +279,11 @@ html {
 }
 
 .book5 {
+
+  background-image:url("../img/b5.jpg");
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position:center;
 
   grid-column-start: 8;
   grid-column-end: 10;
@@ -263,6 +296,11 @@ html {
 
 
 .book6 {
+
+  background-image:url("../img/b6.jpg");
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position:center;
 
   grid-column-start: 11;
   grid-column-end: 13;
@@ -292,17 +330,6 @@ footer {
   background-color: rgba(0,0,0,0.4); 
 }
 
-.light-modal {
-  display: none; 
-  position: fixed;
-  z-index: 100; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(245, 170, 10, 0.4); 
-}
 
 .album-modal-content {
   padding: 2vw;
@@ -328,7 +355,36 @@ footer {
 
 .album-modal-content-photo {
   object-fit: cover;
-  grid:photo;
   width:100%;
-  height:100%; 
+  width:100%;
+  height:100%;
 }
+
+.light-modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(245, 170, 10, 0.4);
+}
+
+.editor-modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(10, 170, 10, 0.4);
+}
+
+.editor-modal-body {
+
+}
+
